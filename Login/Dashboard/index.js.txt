@@ -1,0 +1,15 @@
+import React from 'react';
+
+const Dashboard = () => {
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    return (
+        <div>
+            <h1>Welcome, {user.user_firstname}!</h1>
+            <p>Email: {user.user_email}</p>
+            <p>Phone: {user.user_phone}</p>
+        </div>
+    );
+};
+
+export default Dashboard;
